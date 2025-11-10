@@ -1,0 +1,1 @@
+from .pan import C3k2PAN

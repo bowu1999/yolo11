@@ -328,8 +328,8 @@ class SPPF(nn.Module):
         super().__init__()
         _hidden_channels = in_channels // 2
         self.cv1 = Conv(in_channels=in_channels, out_channels=_hidden_channels)
-        self.cv2 = Conv(in_channels=_hidden_channels * 4, out_channels=out_channels, 1, 1)
-        self.m = nn.MaxPool2d(kernel_size=kernel_size, stride=1, padding=k // 2)
+        self.cv2 = Conv(in_channels=_hidden_channels * 4, out_channels=out_channels)
+        self.m = nn.MaxPool2d(kernel_size=kernel_size, stride=1, padding=kernel_size // 2)
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         """Apply sequential pooling operations to input and return concatenated feature maps."""
