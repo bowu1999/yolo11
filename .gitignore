@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 虚拟环境（根据你的实际目录名调整）
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# 依赖文件（可选：如果你用 requirements.txt 管理依赖）
+# 通常不提交虚拟环境，但可以提交 requirements.txt
+
+# 日志和临时文件
+*.log
+*.tmp
+temp/
+tmp/
+
+# 操作系统
+.DS_Store
+Thumbs.db
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*.swo

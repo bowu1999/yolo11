@@ -1,0 +1,1 @@
+from .script import get_script_name
